@@ -1,0 +1,94 @@
+:root {
+	--primary: #00BABC;
+	--secondary: #0061ff;
+	--text-color: #FFF;
+	--text-secondary: #000;
+	--text-tertiary: #5d5d5d;
+	font-family: "Futura PT", "Futura", "Helvetica", "Sans serif";
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(to right, var(--primary) , var(--secondary), var(--primary), var(--secondary));
+	height: 100vh;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#main {
+	position: relative;
+	text-align: center;
+	display: flex;
+}
+
+img {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	filter: invert(100%);
+	-webkit-filter: invert(100%) opacity(70%);
+}
+
+#title {
+	width: fit-content;
+	color: var(--text-secondary);
+	font-size: 6em;
+	text-transform: capitalize;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+
+#form {
+	margin: auto;
+	margin-top: 14%;
+	z-index: 2;
+}
+
+#username {
+	height: 50px;
+	width: 300px;
+	border-radius: 25px;
+	padding: 20px;
+	text-align: center;
+	outline: none;
+	border: none;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#btn {
+	height: 50px;
+	width: 100px;
+	padding: 20px;
+	outline: none;
+	border: none;	
+	text-align: center;
+	justify-content: center;
+	border-radius: 25px;
+	background-color: var(--primary);
+	cursor: pointer;
+	font-weight: bold;
+	opacity: 0.8;
+}
+
+#btn:hover {
+	opacity: 1;
+
+}
