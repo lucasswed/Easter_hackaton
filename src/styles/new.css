@@ -1,0 +1,13 @@
+#image	{
+	height: 200px;
+	width: 200px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#space {
+	height: 200px;
+	width: calc(100vw - 300px);
+	background-color: white;
+	border-radius: 100px;
+}
