@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+require_relative 'src/api'
+require 'json'
+require 'dotenv'
+
+Dotenv.load ".env"
+
+def env_or_input(var)
+  val = ""
+  if ENV[var]
+    val = ENV[var]
+  else
+    print "#{var.downcase}: " 
+    val = gets.chomp
+  end
+  val 
+end
+
+uid = env_or_input "UID" 
+secret = env_or_input "SECRET" 
+name = env_or_input "INTRA_NAME" 
+
+token = get_user(uid, secret, name)
+data = load_user_data(token, name)
+
+File.write("./output/#{name}.json", JSON.dump(data))
+puts "Success: File saved to '#{ENV['PWD']}/output/#{name}.json'"
