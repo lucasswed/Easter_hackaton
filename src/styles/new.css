@@ -126,6 +126,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
+	position: absolute;
 }
 
 #skills ul {
@@ -147,4 +148,31 @@ header {
 	text-transform: capitalize;
 	color: var(--text-color);
 	margin-top: 20px;
+}
+
+.project_list {
+	margin-left: 300px;
+	margin-top: 50px;
+	margin-right: 50px;
+	border: 1px solid var(--border-color);
+}
+
+#project_short {
+	height: 150px;
+	width: 400px;
+	border-radius: 50px;
+	background-color: var(--text-tertiary);
+	border: 5px solid var(--border-color);
+	position: relative;
+	display: flex;
+}
+
+#PROJECT_ID {
+	border-radius: 50px;
+	background-color: var(--text-tertiary);
+	border: 5px solid var(--border-color);
+}
+
+.card {
+	width: 400px;
 }

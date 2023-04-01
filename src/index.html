@@ -28,8 +28,8 @@
 					<span id="campus">Campus: 42 Lisboa</span>
 					<div id="cursus">
 						<span>Cursus: 42 Cursus</span>
-						<div class="progress" role="progressbar" style="height: 20px">
-							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 52%;">13/25</div>
+						<div class="progress" role="progressbar" style="height: 20px; background-color: #5e5f60;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 52%; background-color: var(--primary);">13/25</div>
 						</div>
 					</div>
 				</div>
@@ -44,8 +44,25 @@
 					<li>Rigor</li>
 				</ul>
 			</aside>
-			<section class="project">
-
+			<section class="project_list">
+				<!-- <div class="project" id="projectX">
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#project_FULL" role="button" aria-expanded="false" aria-controls="project_FULL" id="project_short">
+						PROJECTNAME
+					</a>
+					<div class="collapse" id="project_FULL">
+							Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+					</div>
+				</div> -->
+				<div class="card" id="PROJECT_ID" >
+					<h5 class="card-header">PROJECT</h5>
+					<a class="card-body" href="#PROJECT_FULL" class="btn btn-primary" data-bs-toggle="collapse" style="text-decoration: none;">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					</a>
+					<div class="collapse" id="PROJECT_FULL">
+						Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+					</div>
+				</div>
 			</section>
 		</div>
 	</body>
