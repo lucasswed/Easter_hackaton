@@ -176,3 +176,12 @@ header {
 .card {
 	width: 400px;
 }
+
+.avatar img{
+	margin-left: 50px;
+	margin-top: 20px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid var(--border-color);
+}
