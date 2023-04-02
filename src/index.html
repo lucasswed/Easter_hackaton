@@ -6,8 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfólio</title>
 		<link rel="shortcut icon" href="../imgs/42.svg" type="image/x-icon">
-		<link href="styles/style.css" rel="stylesheet">
-		<link rel="stylesheet" href="styles/new.css">
+		<link rel="stylesheet" href="styles/style.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 		<script src="https://kit.fontawesome.com/00e90511fb.js" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
@@ -17,9 +16,7 @@
 		<div class="content">
 			<header>
 				<div class="avatar">
-					<div class="rounded-full" id="image">
-						<img src="https://images.unsplash.com/photo-1565413294262-fa587c396965?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
-					</div>
+					<img src="https://images.unsplash.com/photo-1565413294262-fa587c396965?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"/>
 				</div>
 				<div id="user_info">
 					<span id="full-name">Pedro Campos Martins</span>
@@ -28,8 +25,8 @@
 					<span id="campus">Campus: 42 Lisboa</span>
 					<div id="cursus">
 						<span>Cursus: 42 Cursus</span>
-						<div class="progress" role="progressbar" style="height: 20px">
-							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 52%;">13/25</div>
+						<div class="progress" role="progressbar" style="height: 20px; background-color: #5e5f60;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 52%; background-color: var(--primary);">13/25</div>
 						</div>
 					</div>
 				</div>
@@ -44,8 +41,25 @@
 					<li>Rigor</li>
 				</ul>
 			</aside>
-			<section class="project">
-
+			<section class="project_list">
+				<!-- <div class="project" id="projectX">
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#project_FULL" role="button" aria-expanded="false" aria-controls="project_FULL" id="project_short">
+						PROJECTNAME
+					</a>
+					<div class="collapse" id="project_FULL">
+							Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+					</div>
+				</div> -->
+				<div class="card" id="PROJECT_ID" >
+					<h5 class="card-header">PROJECT</h5>
+					<a class="card-body" href="#PROJECT_FULL" class="btn btn-primary" data-bs-toggle="collapse" style="text-decoration: none;">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					</a>
+					<div class="collapse" id="PROJECT_FULL">
+						Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+					</div>
+				</div>
 			</section>
 		</div>
 	</body>
