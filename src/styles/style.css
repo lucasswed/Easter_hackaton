@@ -125,7 +125,7 @@ header {
 	width: 40%;
 	float: right;
 	margin-top: 14px;
-	margin-right: 150px;
+	margin-right: 120px;
 }
 
 #skills {
@@ -170,9 +170,8 @@ header {
 	float: right;
 	margin-top: 55px;
 	margin-left: 50px;
-	border: 1px solid var(--border-color);
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -181,7 +180,7 @@ header {
 	width: 300px;
 	height:fit-content !important;
 	margin: 0 100px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	border-radius:50px !important;
 	border: 3px solid var(--text-color) !important;
 	color: var(--text-color) !important;
@@ -199,23 +198,36 @@ header {
 	padding-inline: 5px;
 }
 
-.title {
+/* .title {
+	text-align: center;
 	font-weight: bold;
 	font-size: 25px;
-	padding-left: 25px;
 	padding-top: 10px;
-	text-align: left;
 	text-decoration: underline;
+	text-shadow: 1px var(--text-secondary);
+} */
+
+.title {
+	align-self: center;
+	width: fit-content;
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 10px;
+	/* text-decoration: underline; */
+	text-shadow: 1px var(--text-secondary);
+	border-bottom: 1px solid var(--text-color);
 }
 
 .grade {
+	align-self: flex-end;
+	width: fit-content;
 	font-weight: bold;
 	font-size: 25px;
-	padding-left: 25px;
-	text-align: left;
-}
-.card-body {
-	padding-top: 0px !important;
+	float: right;
+	margin-top: -6px;
+	margin-right: 5px;
+/* 	border: 1px solid var(--border-color);
+	border-radius: 7px; */
 }
 
 .keywords {
@@ -230,6 +242,7 @@ header {
 	color: var(--text-color);
 	background-color: var(--text-tertiary) !important;
 	border-color: var(--text-tertiary) !important;
+	margin-top: -15px;
 	margin-right: 10px;
 	float: right;
 }
@@ -237,4 +250,13 @@ header {
 .collapse {
 	width: 300px;
 	padding: 10px;
+}
+
+#description-title {
+	font-weight: bold;
+}
+
+#description-body {
+	margin-left: 5px;
+	margin-bottom: 20px !important;
 }
