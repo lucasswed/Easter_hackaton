@@ -1,0 +1,15 @@
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/erb-4.0.2/ext/erb/escape
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230402-605254-ge4q4z.rb extconf.rb
+creating Makefile
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/erb-4.0.2/ext/erb/escape
+make "DESTDIR=" clean
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/erb-4.0.2/ext/erb/escape
+make "DESTDIR="
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/erb-4.0.2/ext/erb/escape
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20230402-605254-1eot0my/erb

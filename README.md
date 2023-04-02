@@ -2,7 +2,7 @@
 
 ## Description
 
-A terminal-basaed automated portfolio generator for 42 students to list their projects and progression of the cursus!
+A terminal-based automated portfolio generator for 42 students to list their projects and progression of the cursus!
 
 ## Start using
 

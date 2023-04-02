@@ -1,0 +1,13 @@
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/json-2.6.3/ext/json
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230402-605254-e0qfff.rb extconf.rb
+creating Makefile
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/json-2.6.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/json-2.6.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/json-2.6.3/ext/json
+make "DESTDIR=" install

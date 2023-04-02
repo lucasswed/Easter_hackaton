@@ -1,0 +1,257 @@
+:root {
+	--primary: #00BABC;
+	--secondary: #0061ff;
+	--border-color: #FFF;
+	--text-color: #FFF;
+	--text-secondary: #000;
+	--text-tertiary: grey;
+	font-family: "Futura PT", "Futura", "Helvetica", "Sans serif";
+}
+
+.bg {
+	background: linear-gradient(to right, var(--primary) , var(--secondary), var(--primary), var(--secondary));
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	z-index: -1;
+}
+
+.content{
+	position: absolute;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.avatar {
+	margin-left: 50px;
+	margin-top: 20px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid var(--border-color);
+	background-size:cover;
+	background-position: center;
+}
+
+#user_info {
+	height: 150px;
+	width: calc(100vw - 350px);
+	background-color: var(--text-tertiary);
+	border: 5px solid var(--border-color);
+	border-radius: 60px;
+	margin-top: 45px;
+	margin-left: 50px;
+	display: grid;
+	grid-template: repeat(4, 25%) / 50% 50%;
+}
+
+#full-name {
+	font-weight: bold;
+	font-size: 35px;
+	color: var(--text-color);
+	padding-left: 30px;
+	grid-area: 1 / 1 / 3 / 2;
+}
+
+#username {
+	font-weight: 500;
+	font-size: 20px;
+	color: var(--text-color);
+	padding-left: 30px;
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+#username a, #email a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+#username a:after, #email a:after {
+	color: #FFF;
+}
+
+#username a:hover, #email a:hover {
+	text-decoration: underline;
+}
+
+#icone {
+	color: var(--text-color);
+	font-size: 20px;
+}
+
+#email {
+	font-weight: 500;
+	font-size: 20px;
+	color: var(--text-color);
+	padding-left: 30px;
+	grid-area: 4 / 1 / 5 / 2;
+}
+
+#campus {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--text-color);
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+#cursus {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--text-color);
+	grid-area: 3 / 2 / span 2 / span 1;
+}
+
+.progress {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 40%;
+	float: right;
+	margin-top: 14px;
+	margin-right: 120px;
+}
+
+#skills {
+	margin-left: 50px;
+	margin-top: 50px;
+	height: fit-content;
+	padding-bottom: 30px;
+	width: 200px;
+	background-color: var(--text-tertiary);
+	border: 5px solid var(--border-color);
+	border-radius: 60px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	position: absolute;
+}
+
+#skills ul {
+	list-style-type: disc;
+	display: flex;
+	height: fit-content;
+	flex-direction: column;
+}
+
+#skills h2 {
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+	color: var(--text-color);
+	padding-top: 5px;
+}
+
+#skills li {
+	text-transform: capitalize;
+	color: var(--text-color);
+	margin-top: 20px;
+}
+
+.projects {
+	width: calc(100vw - 350px);
+	height: fit-content;
+	float: right;
+	margin-top: 55px;
+	margin-left: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.card {
+	width: 300px;
+	height:fit-content !important;
+	margin: 0 100px;
+	margin-bottom: 50px;
+	border-radius:50px !important;
+	border: 3px solid var(--text-color) !important;
+	color: var(--text-color) !important;
+	background-color: var(--text-tertiary) !important;
+}
+
+.card li{
+	list-style-type: none;
+}
+
+.card li::before{
+	content: "\003E";
+	font-weight: bold;
+	margin-left: -1em;
+	padding-inline: 5px;
+}
+
+.title {
+	align-self: center;
+	width: fit-content;
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 10px;
+	border-bottom: 1px solid var(--text-color);
+}
+
+.grade {
+	width: fit-content;
+	font-weight: bold;
+	font-size: 25px;
+	float: right;
+	margin-top: -6px;
+	margin-right: 5px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.keywords {
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.button {
+	width:100%;
+	font-size: 30px !important;
+	text-decoration: none;
+	text-align: right;
+	color: var(--text-color);
+	background-color: var(--text-tertiary) !important;
+	border-color: var(--text-tertiary) !important;
+	margin-top: -15px;
+	padding-right: 10px;
+	float: right;
+}
+
+.collapse{
+	width: 300px;
+	padding: 0px 25px;
+	margin-top: -5px;
+	padding-bottom: 20px;
+}
+
+.collapsing{
+	width: 300px;
+	padding: 0px 25px;
+	margin-top: -5px;
+}
+
+.description-title {
+	font-weight: bold;
+	font-size: 18px;
+}

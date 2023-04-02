@@ -1,0 +1,49 @@
+#!/usr/bin/env ruby
+
+require_relative 'src/api'
+require_relative 'src/html'
+
+require 'json'
+require 'dotenv'
+
+Dotenv.load ".env"
+
+def env_or_input(var)
+  val = ""
+  if ENV[var] and !ENV[var].empty?
+    val = ENV[var]
+  else
+    begin
+      while val.empty?
+        print "#{var.downcase}: " 
+        val = gets.chomp
+    end
+    rescue
+        exit 2
+    end
+  end
+  val 
+end
+
+uid = env_or_input "UID" 
+secret = env_or_input "SECRET" 
+name = env_or_input "INTRA_NAME" 
+
+token = get_user(uid, secret, name)
+data = load_user_data(token, name)
+puts "\n[#] Loaded user data"
+
+Dir.mkdir('./output/') unless Dir.exist?('./output')
+File.write("./output/#{name}.json", JSON.dump(data))
+puts "  ✔   =>    './output/#{name}.json'"
+
+print "[#] Loading projects data ."
+projects_file = File.read('./src/data/42cursus_projects.json')
+print "."
+projects_data = JSON.parse(projects_file)
+puts "."
+
+print "[#] Generating html ."
+generate_html(projects_data, data)
+puts ".."
+puts "  ✔   =>   './output/#{name}.html'"

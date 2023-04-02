@@ -1,0 +1,15 @@
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/cgi-0.3.6/ext/cgi/escape
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230402-605254-1kvsni4.rb extconf.rb
+creating Makefile
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/cgi-0.3.6/ext/cgi/escape
+make "DESTDIR=" clean
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/cgi-0.3.6/ext/cgi/escape
+make "DESTDIR="
+compiling escape.c
+linking shared-object cgi/escape.so
+
+current directory: /nfs/homes/jaiveca-/Desktop/Easter_hackaton/gems/gems/cgi-0.3.6/ext/cgi/escape
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20230402-605254-6zws5h/cgi
