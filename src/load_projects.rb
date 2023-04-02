@@ -27,6 +27,7 @@ projects = [
   "CPP Module 07",
   "CPP Module 08",
   "CPP Module 09",
+  "ft_containers",
   "ft_irc",
   "webserv",
   "Inception",
