@@ -258,6 +258,7 @@ header {
 
 footer {
 	font-weight: bold;
+	color:var(--text-color);
 	position: fixed;
 	bottom: 0;
 	right: 0;
