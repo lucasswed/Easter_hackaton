@@ -77,6 +77,7 @@ TEMPLATE = "<!DOCTYPE html>
 			<%end %>
 			</section>
 		</div>
+		<footer>© 2023 &nbsp; 3x*- &nbsp; All Rights Reserved</footer>
 	</body>
 </html>
 "
