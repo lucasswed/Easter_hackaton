@@ -48,6 +48,7 @@ header {
 	width: 200px;
 	border-radius: 50%;
 	border: 5px solid var(--border-color);
+	background-position: center;
 	background-size:cover;
 }
 
@@ -253,4 +254,18 @@ header {
 .description-title {
 	font-weight: bold;
 	font-size: 18px;
+}
+
+footer {
+	font-weight: bold;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	background: linear-gradient(to right, var(--primary) , var(--secondary), var(--primary), var(--secondary));
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
