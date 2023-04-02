@@ -37,11 +37,11 @@ def load_user_data(token, name, cursus_id=21)
 
   # basic info
   info = {
-    :name => data[:usual_full_name],
-    :login => data[:login],
-    :email => data[:email],
-    :campus => data[:campus][0][:name],
-    :image => data[:image][:link]
+    "name": data[:usual_full_name],
+    "login": data[:login],
+    "email": data[:email],
+    "campus": data[:campus][0]["name"],
+    "image": data[:image][:link]
   }
 
   # harcoded 42 main cursus -- might not exist
