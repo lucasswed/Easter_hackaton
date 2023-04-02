@@ -41,11 +41,12 @@ header {
 	justify-content: space-between;
 }
 
-#image	{
-	height: 200px;
-	width: 200px;
+.avatar img{
 	margin-left: 50px;
 	margin-top: 20px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
 	border: 5px solid var(--border-color);
 }
 
@@ -55,7 +56,7 @@ header {
 	background-color: var(--text-tertiary);
 	border: 5px solid var(--border-color);
 	border-radius: 60px;
-	margin-top: 20px;
+	margin-top: 45px;
 	margin-left: 50px;
 	display: grid;
 	grid-template: repeat(4, 25%) / 50% 50%;
@@ -75,6 +76,19 @@ header {
 	color: var(--text-color);
 	padding-left: 30px;
 	grid-area: 3 / 1 / 4 / 2;
+}
+
+#username a, #email a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+#username a:after, #email a:after {
+	color: #FFF;
+}
+
+#username a:hover, #email a:hover {
+	text-decoration: underline;
 }
 
 #icone {
@@ -150,38 +164,77 @@ header {
 	margin-top: 20px;
 }
 
-.project_list {
-	margin-left: 300px;
-	margin-top: 50px;
-	margin-right: 50px;
+.projects {
+	width: calc(100vw - 350px);
+	height: fit-content;
+	float: right;
+	margin-top: 55px;
+	margin-left: 50px;
 	border: 1px solid var(--border-color);
-}
-
-#project_short {
-	height: 150px;
-	width: 400px;
-	border-radius: 50px;
-	background-color: var(--text-tertiary);
-	border: 5px solid var(--border-color);
-	position: relative;
 	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-#PROJECT_ID {
-	border-radius: 50px;
-	background-color: var(--text-tertiary);
-	border: 5px solid var(--border-color);
-}
 
 .card {
-	width: 400px;
+	width: 300px;
+	height:fit-content !important;
+	margin: 0 100px;
+	margin-bottom: 40px;
+	border-radius:50px !important;
+	border: 3px solid var(--text-color) !important;
+	color: var(--text-color) !important;
+	background-color: var(--text-tertiary) !important;
 }
 
-.avatar img{
-	margin-left: 50px;
-	margin-top: 20px;
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	border: 5px solid var(--border-color);
+.card li{
+	list-style-type: none;
+}
+
+.card li::before{
+	content: "\003E";
+	font-weight: bold;
+	margin-left: -1em;
+	padding-inline: 5px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.grade {
+	font-weight: bold;
+	font-size: 25px;
+	padding-left: 25px;
+	text-align: left;
+}
+.card-body {
+	padding-top: 0px !important;
+}
+
+.keywords {
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.button {
+	font-size: 30px !important;
+	text-decoration: none;
+	color: var(--text-color);
+	background-color: var(--text-tertiary) !important;
+	border-color: var(--text-tertiary) !important;
+	margin-right: 10px;
+	float: right;
+}
+
+.collapse {
+	width: 300px;
+	padding: 10px;
 }
