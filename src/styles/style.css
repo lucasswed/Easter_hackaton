@@ -41,13 +41,14 @@ header {
 	justify-content: space-between;
 }
 
-.avatar img{
+.avatar {
 	margin-left: 50px;
 	margin-top: 20px;
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
 	border: 5px solid var(--border-color);
+	background-size:cover;
 }
 
 #user_info {
@@ -104,18 +105,18 @@ header {
 	grid-area: 4 / 1 / 5 / 2;
 }
 
-#cursus {
-	font-weight: 700;
-	font-size: 30px;
-	color: var(--text-color);
-	grid-area: 3 / 2 / span 2 / span 1;
-}
-
 #campus {
 	font-weight: 700;
 	font-size: 30px;
 	color: var(--text-color);
 	grid-area: 2 / 2 / 3 / 3;
+}
+
+#cursus {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--text-color);
+	grid-area: 3 / 2 / span 2 / span 1;
 }
 
 .progress {
@@ -198,36 +199,23 @@ header {
 	padding-inline: 5px;
 }
 
-/* .title {
-	text-align: center;
-	font-weight: bold;
-	font-size: 25px;
-	padding-top: 10px;
-	text-decoration: underline;
-	text-shadow: 1px var(--text-secondary);
-} */
-
 .title {
 	align-self: center;
 	width: fit-content;
 	font-weight: bold;
 	font-size: 25px;
 	padding-top: 10px;
-	/* text-decoration: underline; */
-	text-shadow: 1px var(--text-secondary);
 	border-bottom: 1px solid var(--text-color);
 }
 
 .grade {
-	align-self: flex-end;
 	width: fit-content;
 	font-weight: bold;
 	font-size: 25px;
 	float: right;
 	margin-top: -6px;
 	margin-right: 5px;
-/* 	border: 1px solid var(--border-color);
-	border-radius: 7px; */
+	border-bottom: 1px solid var(--border-color);
 }
 
 .keywords {
@@ -237,26 +225,32 @@ header {
 }
 
 .button {
+	width:100%;
 	font-size: 30px !important;
 	text-decoration: none;
+	text-align: right;
 	color: var(--text-color);
 	background-color: var(--text-tertiary) !important;
 	border-color: var(--text-tertiary) !important;
 	margin-top: -15px;
-	margin-right: 10px;
+	padding-right: 10px;
 	float: right;
 }
 
-.collapse {
+.collapse{
 	width: 300px;
-	padding: 10px;
+	padding: 0px 25px;
+	margin-top: -5px;
+	padding-bottom: 20px;
 }
 
-#description-title {
+.collapsing{
+	width: 300px;
+	padding: 0px 25px;
+	margin-top: -5px;
+}
+
+.description-title {
 	font-weight: bold;
-}
-
-#description-body {
-	margin-left: 5px;
-	margin-bottom: 20px !important;
+	font-size: 18px;
 }
