@@ -259,6 +259,7 @@ header {
 footer {
 	font-weight: bold;
 	position: fixed;
+	color: var(--text-color);
 	bottom: 0;
 	right: 0;
 	left: 0;
